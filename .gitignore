@@ -1,0 +1,13 @@
+# Ignore compiled executables
+*.exe
+*.o
+*.out
+wrong
+correct
+gen
+
+# Ignore local text files
+input.txt
+output.txt
+error.txt
+correct_ans.txt
