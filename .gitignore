@@ -7,7 +7,6 @@ correct
 gen
 
 # Ignore local text files
-input.txt
-output.txt
-error.txt
+ST_output.txt
+ST_input.txt
 correct_ans.txt
