@@ -23,10 +23,10 @@ echo ========================================
 echo WA FOUND ON TEST %i%!
 echo ========================================
 echo [THE INPUT THAT BROKE YOUR CODE]:
-type input.txt
+type ST_input.txt
 echo ========================================
 echo [YOUR WRONG ANSWER]:
-type output.txt
+type ST_output.txt
 echo ========================================
 echo [THE CORRECT ANSWER]:
 type correct_ans.txt
