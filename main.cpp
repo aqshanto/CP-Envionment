@@ -18,7 +18,42 @@ void setIO() {
 const int mx = 500005;
 
 void solve() {
-    // Write your logic here
+    int k,n;
+    cin >> n >> k; 
+    vector<int>v(n);
+    for(int i = 0;i<n;i++){
+        cin >> v[i];
+    }
+    map<int,int>mp;
+    int lo = 0, hi = 0, cnt = 0, mx = 0,anslo  = lo, anshi = hi;
+    while(lo<n && hi < n){
+        // cout << lo << " " << hi << "\n";
+        if(mp[v[hi]]==0)cnt++;
+        mp[v[hi]]++;
+        hi++;
+        if(cnt<=k){
+            int val = hi - lo;
+            // cout << val << "\n";
+            if(val>mx){
+                anslo = lo+1;
+                anshi = hi;
+                mx = val;
+            }
+        }
+        if(cnt>k){
+            mp[v[lo]]--;
+            if(mp[v[lo]]==0)cnt--;
+            lo++;
+        }
+    }
+    if(cnt==k){
+        int val = hi - lo;
+        if(val>mx){
+            anslo = lo+1;
+            anshi = hi;
+        }
+    }
+    cout << anslo << " "<< anshi << "\n";
 }
 
 int main() {
