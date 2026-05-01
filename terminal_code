@@ -1,0 +1,9 @@
+For new commit
+
+git add .
+git commit -m "Added Sublime build systems"
+git push
+
+for clone
+
+git clone https://github.com/aqshanto/CP-Environment.git
